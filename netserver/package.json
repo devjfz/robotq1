@@ -1,0 +1,15 @@
+{
+  "name": "deskrobot-netserver",
+  "version": "0.1.0",
+  "private": true,
+  "description": "桌面机器人轻量网关：设备鉴权、下发短期凭证、代理大模型调用（零第三方依赖）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "add-device": "node --env-file-if-exists=.env scripts/add-device.js",
+    "test": "node --test test/"
+  }
+}
